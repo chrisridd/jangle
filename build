@@ -12,6 +12,9 @@
 #
 
 PATH=/usr/jdk/instances/jdk1.6.0/bin:$PATH
+if [ -d /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin ]; then
+	PATH=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin:$PATH
+fi
 export PATH
 
 JKDIR=`dirname $0`
