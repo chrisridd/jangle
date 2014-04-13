@@ -75,6 +75,7 @@ public class SnmpBrowser extends JFrame implements ActionListener {
 
     public SnmpBrowser() {
 	super(SnmpResources.getString("BROWSERUI.NAME.TEXT"));
+	System.setProperty("apple.laf.useScreenMenuBar", "true");
 
 	(new SmmWorker()).execute();
 
